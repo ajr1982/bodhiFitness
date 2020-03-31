@@ -1,0 +1,44 @@
+.header{
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($bodhi-green, 0.8),
+      rgba($black, 0.8)),
+      url("../imgs/main.jpg");
+  background-size: cover;
+  background-position: top;
+  
+  position: relative;
+
+  &__logobox{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+
+    &__logo{
+      height: 12rem;
+    }
+  }
+
+  &__textbox{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  &__primary--main{
+      font-family: $title-font;
+      color: #ffffff;
+      text-transform: uppercase;
+      backface-visibility: hidden;
+      margin-bottom: 6rem;
+      display: block;
+      font-size: 6rem;
+      font-weight: 300;
+      letter-spacing: 2rem;
+      animation: moveFromBottom 1.5s;
+      text-shadow: 1px 1px 2px rgb(100,100,100);
+  }
+}

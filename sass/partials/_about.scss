@@ -1,0 +1,13 @@
+.about{
+  padding: 10rem 0 25rem 0;
+  background-color: $grey-light;
+  margin-top: -12vh;
+  height: 40vh;
+
+  transform: skewY(-5deg);
+
+  & > *{
+    transform: skewY(5deg);
+  }
+
+}

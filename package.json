@@ -1,0 +1,22 @@
+{
+  "name": "bodhi-fitness",
+  "version": "1.0.0",
+  "description": "Bodhi Fitness Website",
+  "main": "index.js",
+  "scripts": {
+    "compile_css": "node-sass --watch sass/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GISJMR/bodhi-fitness.git"
+  },
+  "author": "JM Roden",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GISJMR/bodhi-fitness/issues"
+  },
+  "homepage": "https://github.com/GISJMR/bodhi-fitness#readme",
+  "dependencies": {
+    "node-sass": "^4.9.0"
+  }
+}

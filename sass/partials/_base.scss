@@ -1,0 +1,22 @@
+// Browser Reset
+*
+*::after
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+// Default font size -- ease of use with rem
+
+html{
+  font-size: 62.5%;
+  font-family: $title-font;
+}
+
+// Body set up
+
+body{
+    padding: 3rem;
+    box-sizing: border-box;
+}

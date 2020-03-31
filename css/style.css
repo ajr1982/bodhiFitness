@@ -1,0 +1,182 @@
+@keyframes moveFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem); }
+  80% {
+    transform: translateY(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes rotate360 {
+  0% {
+    transform: rotate(360deg); } }
+
+.section-heading {
+  font-size: 3.5rem;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  display: inline-block;
+  transition: .2s; }
+  .section-heading:hover {
+    color: #c8e6c9; }
+
+.paragraph {
+  font-size: 1.7rem;
+  word-spacing: 0.6rem;
+  text-align: justify; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
+.u-centre-text {
+  text-align: center; }
+
+.u-margin-bottom-8 {
+  margin-bottom: 6rem; }
+
+*
+*::after
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  font-family: "Lato", sans-serif; }
+
+body {
+  padding: 3rem;
+  box-sizing: border-box; }
+
+.about {
+  padding: 10rem 0 25rem 0;
+  background-color: #f7f7f7;
+  margin-top: -12vh;
+  height: 40vh;
+  transform: skewY(-5deg); }
+  .about > * {
+    transform: skewY(5deg); }
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(200, 230, 201, 0.8), rgba(0, 0, 0, 0.8)), url("../imgs/main.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative; }
+  .header__logobox {
+    position: absolute;
+    top: 2rem;
+    left: 2rem; }
+    .header__logobox__logo {
+      height: 12rem; }
+  .header__textbox {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+  .header__primary--main {
+    font-family: "Lato", sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+    display: block;
+    font-size: 6rem;
+    font-weight: 300;
+    letter-spacing: 2rem;
+    animation: moveFromBottom 1.5s;
+    text-shadow: 1px 1px 2px #646464; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 100px; }
+  .row .col-1-of-2 {
+    width: calc((100% - 5rem) / 2);
+    float: left; }
+    .row .col-1-of-2:not(:last-child) {
+      margin-right: 5rem; }
+  .row .col-1-of-3 {
+    width: calc((100% - (2 * 5rem)) / 3);
+    float: left;
+    background-color: yellow; }
+    .row .col-1-of-3:not(:last-child) {
+      margin-right: 5rem; }
+
+.services {
+  padding: 15rem 0;
+  height: 55vh;
+  background-image: linear-gradient(to right bottom, rgba(200, 230, 201, 0.8), rgba(0, 0, 0, 0.8)), url("../imgs/kb-squat.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  transform: skewY(-5deg); }
+  .services > * {
+    transform: skewY(5deg); }
+
+.composition {
+  position: relative; }
+  .composition__photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    transition: all .2s;
+    outline-offset: 2rem; }
+    .composition__photo--p1 {
+      left: 0;
+      top: -2rem; }
+    .composition__photo--p2 {
+      right: 0;
+      top: 2rem; }
+    .composition__photo--p3 {
+      left: 20%;
+      top: 10rem; }
+    .composition__photo:hover {
+      outline: 1.5rem solid #c8e6c9;
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      z-index: 20; }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95); }
+
+.nav-menu {
+  z-index: 5000;
+  position: fixed;
+  right: 6rem;
+  top: 6rem;
+  text-align: center;
+  margin: 20px 10px;
+  animation: moveFromRight 1.5s; }
+  .nav-menu__social-media-btn {
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+    background-color: #fff;
+    padding: 1rem;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    color: #000;
+    animation: rotate360 1.5s;
+    box-shadow: 1px 1px 2px #646464;
+    transition: 0.5s; }
+    .nav-menu__social-media-btn:hover {
+      background-color: #000;
+      color: #fff; }

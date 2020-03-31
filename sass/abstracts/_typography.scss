@@ -1,0 +1,22 @@
+.section-heading{
+  font-size: 3.5rem;
+  font-family: $title-font;
+  text-transform: uppercase;
+  font-weight: $normal-font;
+  display: inline-block;
+  transition: .2s;
+
+  &:hover{
+    color: $bodhi-green;
+  }
+}
+
+.paragraph{
+  font-size: 1.7rem;
+  word-spacing: 0.6rem;
+  text-align: justify;
+
+  &:not(:last-child){
+    margin-bottom: 3rem;
+  }
+}
